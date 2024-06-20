@@ -102,7 +102,7 @@ GET parameters are parsed from URL and tested one by one
 ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparams
 ```
 ### Scanning GET Parameters with papline 
-Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
+Automate testing list of urls with other tools 
 ```
 ubuntu:~/SqliSniperPlUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperNEWv4.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
 ```
