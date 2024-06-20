@@ -51,7 +51,7 @@ options:
   --getparams           Test only GET parameters for SQL injection | without this switch just Headers will be tested!
 ```
 
-# Running SqliSniperPlUS
+# Running SqliSniperPLUS
 ### Single Url Scan
 The url can be provided with `-u flag` for single site scan
 ```
