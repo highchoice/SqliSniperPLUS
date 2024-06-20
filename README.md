@@ -20,7 +20,7 @@
 ## Installation
 ```
 git clone https://github.com/highchoice/SqliSniperPLUS.git
-cd SqliSniperPlUSPLUS
+cd SqliSniperPLUS
 chmod +x SqliSniperPlus.py
 pip3 install -r requirements.txt
 ```
