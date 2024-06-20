@@ -28,7 +28,7 @@ pip3 install -r requirements.txt
 
 This will display help for the tool. Here are all the options it supports.
 ```
-ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -h
+ubuntu:~/SqliSniperPLUS$ ./SqliSniperPlus.py -h
 
 usage: SqliSniperPlus.py [-h] [-u URL] [-r URLS_FILE] [-p] [--proxy PROXY] [--payload PAYLOAD] [--single-payload SINGLE_PAYLOAD] [--discord DISCORD] [--headers HEADERS]
                      [--threads THREADS] [--getparams]
@@ -79,7 +79,7 @@ By default the SqliSniperPlUS use the payloads.txt file. However `--payload flag
 While using the custom payloads file, ensure that you substitute the sleep time with `%__TIME_OUT__%`. SqliSniperPlUS dynamically adjusts the sleep time iteratively to mitigate potential false positives.
 The payloads file should look like this.
 ```
-ubuntu:~/SqliSniperPlUS$ cat payloads.txt 
+ubuntu:~/SqliSniperPLUS$ cat payloads.txt 
 0\"XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR\"Z
 "0"XOR(if(now()=sysdate()%2Csleep(%__TIME_OUT__%)%2C0))XOR"Z"
 0'XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR'Z
@@ -92,19 +92,19 @@ If you want to only test with the single payload `--single-payload flag` can be 
 ### Scanning Custom Header 
 Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
 ```
-ubuntu:~/SqliSniperPlUS$ cat headers.txt 
+ubuntu:~/SqliSniperPLUS$ cat headers.txt 
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 X-Forwarded-For: 127.0.0.1
 ```
 ### Scanning GET Parameters 
 GET parameters are parsed from URL and tested one by one 
 ```
-ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparams
+ubuntu:~/SqliSniperPLUS$ ./SqliSniperPlus.py -r url.txt --getparams
 ```
 ### Scanning GET Parameters with papline 
 Automate testing list of urls with other tools 
 ```
-ubuntu:~/SqliSniperPlUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperNEWv4.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
+ubuntu:~/SqliSniperPLUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperNEWv4.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
 ```
 ### Sending Discord Alert Notifications
 SqliSniperPlUS also offers Discord alert notifications, enhancing its functionality by providing real-time alerts through Discord webhooks. This feature proves invaluable during large-scale scans, allowing prompt notifications upon detection.
