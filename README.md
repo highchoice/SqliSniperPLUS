@@ -97,7 +97,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 X-Forwarded-For: 127.0.0.1
 ```
 ### Scanning GET Parameters 
-Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
+GET parameters are parsed from URL and tested one by one 
 ```
 ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparams
 ```
