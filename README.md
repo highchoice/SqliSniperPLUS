@@ -99,7 +99,7 @@ X-Forwarded-For: 127.0.0.1
 ### Scanning GET Parameters 
 Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
 ```
-ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparam
+ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparams
 ```
 ### Scanning GET Parameters with papline 
 Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
