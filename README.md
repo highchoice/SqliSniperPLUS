@@ -52,10 +52,15 @@ options:
 ```
 
 # Running SqliSniperPLUS
-### Single Url Scan
+### Single Url Scan - Headers only
 The url can be provided with `-u flag` for single site scan
 ```
 ./SqliSniperPlus.py -u http://example.com
+```
+### Single Url Scan GET params only
+The url can be provided with `-u flag` for single site scan with `--getparams` to scan onyla GET parameters
+```
+./SqliSniperPlus.py -u http://example.com/param1=xxx&param2=123 --getparams
 ```
 ### File Input
 The `-r flag` allows SqliSniperPlUS to read a file containing multiple URLs for simultaneous scanning.
