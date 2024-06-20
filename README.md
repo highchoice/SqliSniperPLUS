@@ -7,7 +7,7 @@
   <a href="#usage">Usage</a> •
 </p>
 
-**SqliSniperPLUS** is a robust Python tool designed to detect time-based blind SQL injections in HTTP request headers and GET parameters. It enhances the security assessment process by rapidly scanning and identifying potential vulnerabilities using multi-threaded, ensuring speed and efficiency. Unlike other scanners, SqliSniperPlUSPLUS is designed to eliminates false positives through and send alerts upon detection, with the built-in Discord notification functionality.
+**SqliSniperPLUS** is a robust Python tool designed to detect time-based blind SQL injections in HTTP request headers and GET parameters. It enhances the security assessment process by rapidly scanning and identifying potential vulnerabilities using multi-threaded, ensuring speed and efficiency. Unlike other scanners, SqliSniperPLUS is designed to eliminates false positives through and send alerts upon detection, with the built-in Discord notification functionality.
 
 ## Key Features
 - **Time-Based Blind SQL Injection Detection:** Pinpoints potential SQL injection vulnerabilities in HTTP headers.
