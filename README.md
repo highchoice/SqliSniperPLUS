@@ -96,6 +96,16 @@ ubuntu:~/SqliSniperPlUS$ cat headers.txt
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 X-Forwarded-For: 127.0.0.1
 ```
+### Scanning GET Parameters 
+Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
+```
+ubuntu:~/SqliSniperPlUS$ ./SqliSniperPlus.py -r url.txt --getparam
+```
+### Scanning GET Parameters with papline 
+Headers are saved in the file headers.txt for scanning custom header save the custom HTTP Request Header in headers.txt file. 
+```
+ubuntu:~/SqliSniperPlUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperNEWv4.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
+```
 ### Sending Discord Alert Notifications
 SqliSniperPlUS also offers Discord alert notifications, enhancing its functionality by providing real-time alerts through Discord webhooks. This feature proves invaluable during large-scale scans, allowing prompt notifications upon detection.
 ```
