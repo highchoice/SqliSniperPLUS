@@ -110,7 +110,7 @@ ubuntu:~/SqliSniperPLUS$ ./SqliSniperPlus.py -r url.txt --getparams
 ### Scanning GET Parameters with papline 
 Automate testing list of urls with other tools 
 ```
-ubuntu:~/SqliSniperPLUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperNEWv4.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
+ubuntu:~/SqliSniperPLUS$ cat url.txt | katana -f qurl -silent | sort -u | python3 sqlisniperPlus.py -p --proxy http://10.10.16.1:9090 --threads 50 --getparams
 ```
 ### Sending Discord Alert Notifications
 SqliSniperPlUS also offers Discord alert notifications, enhancing its functionality by providing real-time alerts through Discord webhooks. This feature proves invaluable during large-scale scans, allowing prompt notifications upon detection.
