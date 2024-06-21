@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# Coded by https://twitter.com/DanialHalo
-
 import argparse
 import sys
 import requests
