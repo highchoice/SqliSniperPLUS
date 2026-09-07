@@ -1027,3 +1027,7 @@ zerodiumsleep(10);
 '%2b(select*from(select(sleep(10)))a)%2b'
 '%2b(select*from(select(sleep(10)))a)%2b
 %2b(select*from(select(sleep(10)))a)%2b
+''||(select 1 from (select pg_sleep(10))x)||'
+''||(select 1 from (select pg_sleep(6))x)||
+'||(select 1 from (select pg_sleep(10))x)||
+
